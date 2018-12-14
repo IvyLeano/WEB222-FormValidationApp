@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+   <title>Leano</title>
+   <link rel='stylesheet' href='normalize.css' type='text/css' media='screen'>
+   <script src="info.js"></script>
+</head>
+<body>
+  <div class="main-container">
+   <!--Header-->   
+    <div class="header">
+      <h1>Welcome Page <img src="logo.jpg" alt="logo" width="40" height="25" /></h1>  
+    </div>
+    <!--Navigation-->
+    <div class="navigation2">
+        <h4>Available Links: </h4>
+        <a href="honesty.html">Honest Page</a>
+    </div>
+    <!--Body-->
+    <div class="body2">
+        <h3>Sign Up Page: Create User Account</h3>
+        <form id='signup' name='signup' method='post' action='https://httpbin.org/post' onsubmit='return formValidation()'>
+            First Name: <input type="text" name="firstName" id="firstName" required/> <br /><br /> 
+            Last Name:  <input type="text" name="LastName" id="LastName" required/> <br /><br /> 
+            Password: <input type="password" name="Password" id="Password" maxlength="6" required/> Six Characters Long<br /><br />
+            Confirm Password: <input type="password" name="ConPassword" id="ConPassword" maxlength="6" required/> <br /><br />
+            Username: <input type="text" name="Username" id="Username" maxlength="6" required/> Six Characters Long<br /><br />
+            Education Level:
+            <select required="required">
+                <option value="">-Select-</option>
+                <option value="1">Technical Diploma</option>
+                <option value="2">College Diploma</option>
+                <option value="3">Bachelor's Degree</option>
+                <option value="4">Master's Degree</option>
+                <option value="5">Others</option>
+            </select>
+            <br /><br />
+            Education Status: <br />
+            <input type="radio" name="EducationStatus" id="Graduated" value="Graduated" required/> Graduated <br />
+            <input type="radio" name="EducationStatus" id="CurrentlyEnrolled" value="CurrentlyEnrolled"/> Currently Enrolled <br />
+            <input type="radio" name="EducationStatus" id="DidNotGraduate" value="DidNotGraduate"/> Did Not Graduate <br /><br />
+            Email: <input type="email" name="email" id="email" required/> <br /> <br /> 
+            Age: <input type="text" name="age" id="age" required/> Must be between 18-60<br /><br />
+
+            <input type="hidden" name="Leano" id="Leano" Value="Leano"/>
+            <input type="hidden" name="1000000" id="1000000" Value="100000"/> <br />
+            
+            <input type="reset" value="Clear Page" />
+            <input type="submit" value='Submit' />
+            <br /> <br />
+            
+        </form>
+     
+    </div>
+    <!--Side Panel-->
+    <div class="side-panel">
+        <h4 id="output">Error Display:</h4>
+        <p id="error"></p>
+    </div>
+    <!--Footer-->
+    <div class="footer">
+      <h4>©2018 - &lt;Ivy Leano&gt;</h4>
+    </div>
+   </div>
+</body>
+
+</html>
